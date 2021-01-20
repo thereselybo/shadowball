@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "ShadowBall + Pro Advancer",
+    "type": "product",
+    "image": "./img/products/shadowballs/pro-advancer/01_small.jpg",
+    "price": "R450.00"
+  },
+  {
+    "id": 2,
+    "title": "ShadowBall Pro Size 5",
+    "type": "product",
+    "image": "./img/products/shadowballs/pro_size_5/01.jpg",
+    "price": "R350.00"
+  },
+  {
+    "id": 3,
+    "title": "ShadowBall Pro Size 4",
+    "type": "product",
+    "image": "./img/products/shadowballs/pro_size_4/01.jpg",
+    "price": "R290.00"
+  },
+  {
+    "id": 4,
+    "title": "ShadowBall Pro Size 3",
+    "type": "product",
+    "image": "./img/products/shadowballs/pro_size_3/04_transp.png",
+    "price": "R230.00"
+  },
+  {
+    "id": 5,
+    "title": "ShadowBall Limited Edition Collector's Box - Size 4 Pro",
+    "type": "product",
+    "image": "./img/products/shadowballs/collectors/size-4-pro.png",
+    "price": "R399.00"
+  },
+  {
+    "id": 6,
+    "title": "ShadowBall Limited Edition Collector's Box - Size 5 Pro",
+    "type": "product",
+    "image": "./img/products/shadowballs/collectors/size-5-pro.png",
+    "price": "R420.00"
+  },
+  {
+    "id": 7,
+    "title": "ShadowBall Limited Edition Collector's Box - Size 5 Pro Green and Grey",
+    "type": "product",
+    "image": "./img/products/shadowballs/collectors/size-5-pro-green-gray.png",
+    "price": "R420.00"
+  }
+]
