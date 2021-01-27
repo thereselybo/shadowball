@@ -2,6 +2,9 @@
 
 > Interaction Design Course Assignment. Shadowball.co.za e-commerce website
 
+## Live project
+https://shadowball.lybo.dev
+
 ## Goal
 
 To build a HTML,CSS and JS prototype. You will put into practice the principles learnt throughout this course and combine them with your skills in HTML, CSS and JavaScript.
