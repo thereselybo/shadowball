@@ -1,7 +1,9 @@
-"use strict";
-const detailsContainer = document.querySelector("#detailed-description");
-function switchAccordionTabs(breakpoint) {
-    const tabs = ` <div class="tabs row">
+const detailsContainer = document.querySelector(
+  "#detailed-description"
+) as HTMLDivElement;
+
+function switchAccordionTabs(breakpoint: any) {
+  const tabs = ` <div class="tabs row">
                         <nav>
                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                 <a class="nav-item nav-link active" id="nav-description-tab" data-toggle="tab" href="#nav-description" role="tab" aria-controls="nav-description" aria-selected="true"><h4>Description</h4></a>
@@ -22,7 +24,8 @@ function switchAccordionTabs(breakpoint) {
                             </div>
                         </div>
                     </div>`;
-    const accordion = `<div class="accordion" id="detailed-accordion">
+
+  const accordion = `<div class="accordion" id="detailed-accordion">
                     <div class="card">
                     <div class="accordion-header" id="headingDescription"  type="button" data-toggle="collapse" data-target="#collapseDetails" aria-expanded="true" aria-controls="collapseDetails">
                       <h4 class="mb-0">
@@ -64,12 +67,13 @@ function switchAccordionTabs(breakpoint) {
                     </div>
                   </div>
               </div>`;
-    if (breakpoint.matches) {
-        detailsContainer.innerHTML = tabs;
-    }
-    else {
-        detailsContainer.innerHTML = accordion;
-    }
+
+  if (breakpoint.matches) {
+    detailsContainer.innerHTML = tabs;
+  } else {
+    detailsContainer.innerHTML = accordion;
+  }
 }
+
 switchAccordionTabs(breakpoint);
 breakpoint.addListener(switchAccordionTabs);
