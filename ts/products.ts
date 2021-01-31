@@ -1,23 +1,29 @@
-"use strict";
 const prodUrl = "js/products.json";
-const container = document.querySelector(".row");
+const container = document.querySelector(".row") as HTMLDivElement;
+
 fetch(prodUrl)
-    .then(function (response) {
+  .then(function (response) {
     return response.json();
-})
-    .then(function (json) {
+  })
+  .then(function (json) {
     handleShadowballs(json);
     console.dir(json);
-})
-    .catch(function () {
+  })
+  .catch(function () {
     container.innerHTML = `<img src="./img/error.svg" id="error-img">`;
-});
-function handleShadowballs(shadowballs) {
-    shadowballs.forEach(function (product) {
-        const title = product.title;
-        const imgUrl = product.image;
-        const price = product.price;
-        container.innerHTML += `<div class="col-sm">
+  });
+
+function handleShadowballs(shadowballs: []) {
+  interface Shadowball {
+    title: string;
+    image: string;
+    price: string | number;
+  }
+  shadowballs.forEach(function (product: Shadowball) {
+    const title = product.title;
+    const imgUrl = product.image;
+    const price = product.price;
+    container.innerHTML += `<div class="col-sm">
                                 <div class="card">
                                     <a href="./shadowball-size-3-pro.html">
                                         <img src="${imgUrl}" class="card-img-top details-img" alt="${title}">
@@ -33,5 +39,5 @@ function handleShadowballs(shadowballs) {
                                     </div>
                                 </div>
                             </div>`;
-    });
+  });
 }
